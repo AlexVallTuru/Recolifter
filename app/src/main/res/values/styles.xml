@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.googleButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="materialDividerStyleMarginBottom">
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="emailInputStyle">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="passwordInputStyle">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="titleQuestionnaireActivities">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="backgroundGreyQuestionnaire">
+        <item name="android:background">@drawable/rectangle_questionnaire_grey</item>
+        <item name="android:layout_margin">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tableRowAlimentation">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="marginBottomConstrainQuestionnaire">
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <style name="imageNumberPickerFlights">
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="tableRowFlights">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="verticalLayoutTextFlights">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="roundImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+
+    //Text Styles
+
+    <style name="tvNoScannerResult">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily">@font/sfprodisplayregular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="titleHistory">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/sfprodisplaybold</item>
+    </style>
+
+    <style name="questionnaireTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_xxnormal</item>
+        <item name="android:fontFamily">@font/sfprodisplayregular</item>
+        <item name="android:layout_marginStart">@dimen/ui_margin_xnormal</item>
+        <item name="android:layout_marginTop">@dimen/ui_margin_xmicro</item>
+    </style>
+
+    <style name="questionnaireDescription">
+        <item name="android:textSize">@dimen/text_size_xxsmall</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/sfprodisplayregular</item>
+        <item name="android:layout_marginStart">@dimen/ui_margin_xnormal</item>
+        <item name="android:layout_marginTop">@dimen/ui_margin_xmicro</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,195 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Recolifter</string>
+
+    <!-- Top Menu -->
+    <string name="top_menu_carbonFootPrint">Emprenta de carboni</string>
+    <string name="top_menu_userProfile">Perfil d\'usuari</string>
+    <string name="top_menu_signOut">Tancar sessió</string>
+
+    <!--    Bottom Navigation   -->
+    <string name="bottom_nav_home">Inici</string>
+    <string name="bottom_nav_map">Mapa</string>
+    <string name="bottom_nav_scanner">Escaner</string>
+    <string name="bottom_nav_rewards">Premis</string>
+
+    <!-- Activity PreLogin -->
+    <string name="button_register">REGISTER</string>
+    <string name="text_account">Ja tens un compte?</string>
+    <string name="text_login">Fes login</string>
+
+
+    <!-- Activity Login -->
+    <string name="invalid_credentials">Credencials incorrectes</string>
+    <string name="authentication_succeed">Autentificació correcte</string>
+    <string name="authentication_failed">Autentificació fallida</string>
+    <string name="title_login">Login</string>
+    <string name="edit_text_email">Correu</string>
+    <string name="edit_text_password">Contrasenya</string>
+    <string name="text_forgot_password">Has oblidat la teva contrasenya?</string>
+    <string name="text_recover_password">Recupera-la</string>
+    <string name="text_not_account">No tens compte?</string>
+    <string name="text_register">Registra\'t</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_login_google">Fes login amb Google</string>
+
+    <!--    Register Activity    -->
+    <string name="register_failed">El registre en el sistema ha fallat intenta-ho mes tard</string>
+    <string name="minimum_password_length">Password: Longitud minima de 6 caràcters.</string>
+    <string name="conditions_check_box">Has de acceptar els termes i condicions primer.</string>
+    <string name="register">Registre</string>
+    <string name="email">Email</string>
+    <string name="password">Contrasenya</string>
+    <string name="login">Login</string>
+    <string name="register_google">Registra\'t amb Google</string>
+    <string name="register_caps">REGISTRE</string>
+    <string name="already_account">Ja tens un compte?</string>
+    <string name="terms_and_conditions">Accepto els termes i condicions</string>
+
+    <!--    Buttom pantalla password recovery-->
+    <string name="invalid_email">La adreça no existeix.</string>
+
+
+    <!--    Segunda Password Recovery -->
+    <string name="email_pasword_recovery">Email</string>
+    <string name="Introduir_mail">Introdueix el teu e-mail, enviarem un codi perque puguis modificar la teva contrasenya</string>
+    <string name="Buttomenviar_precovery">ENVIAR</string>
+
+    <!--    Segunda pantalla Password Recovery Code -->
+    <string name="ButtomEnviar_precovery2">ENVIAR</string>
+    <string name="codi_enviat">Codi enviat</string>
+    <string name="Code_CampoDeTexto">Codi</string>
+    <string name="repeteix_contrasenya_Campodetexto">Repeteix contrasenya</string>
+    <string name="nova_contrasenya_CampoDeTexto">Nova Contrasenya</string>
+
+    <!--    2 Home -->
+    <string name="name_home">Name</string>
+    <string name="surname_home">Surname</string>
+    <string name="five_home">5</string>
+    <string name="cantidadTCO2_home">T CO2</string>
+    <string name="titolBosc_home">El bosc sap el teu nom</string>
+    <string name="descripcionbosque_home">Entra al apartat de premis i compra un arbre utilizant el credits acumulats</string>
+    <string name="descripcionBosque2_home">Construeix el teu bosc reciclant</string>
+    <string name="botonBosque_home">VISUALITZA ELS TEUS ARBRES</string>
+    <string name="empremtaCarboni_home">Emprenta de Carboni</string>
+    <string name="descripcioEmprenta_home">La teva amprenta de carboni es de %1$s t/any</string>
+    <string name="BottomAmprenta_home">CALCULA</string>
+
+    <!--   Questionnaire buttons   -->
+    <string name="button_skip">SKIP</string>
+    <string name="button_next">Next ▶</string>
+    <string name="button_back">◀ Back</string>
+
+    <!--   Questionnaire fragment   -->
+    <string name="title_questionnaire">COMENÇA A CALCULAR \n LA TEVA \n EMPRENTA DE CARBONI</string>
+
+    <!--   Transport Type fragment   -->
+    <string name="title_transport_type">Tipus de transport</string>
+    <string name="description_transport_type">Selecciona el tipus de transport que utilitzas amb mes frequencia</string>
+    <string name="text_car">Cotxe</string>
+    <string name="text_motorbike">Moto</string>
+    <string name="text_bus">Bus</string>
+    <string name="text_train">Tren</string>
+    <string name="text_bike">Bicicleta</string>
+    <string name="text_walk">Caminar</string>
+
+    <!--   Transport Time fragment   -->
+    <string name="title_transport_time">Temps de transport</string>
+    <string name="description_transport_time">Temps aproximat que dediques a viatjar al dia</string>
+
+    <!--   Transport Time fragment   -->
+    <string name="title_flights">Als teus vols</string>
+    <string name="description_flights">Quants vols agafas al any? Recorda contabilitzar els viatjes d\'anada i tornada</string>
+    <string name="title_short_fly">Curt</string>
+    <string name="description_short_fly">Maxim 3 hores de durada</string>
+    <string name="title_medium_fly">Mitja</string>
+    <string name="description_medium_fly">3–6 hores de durada</string>
+    <string name="title_long_fly">Llarg</string>
+    <string name="description_long_fly">6+ hores</string>
+
+    <!--   Alimentation fragment   -->
+    <string name="title_alimentation">Seguiment alimentari</string>
+    <string name="description_alimentation">Quin dels següents tipus descriu millor el teu consum alimentari?</string>
+    <string name="title_lot_meat">Molta carn</string>
+    <string name="description_lot_meat">Més de 100g de carn al dia</string>
+    <string name="title_medium_meat">Moderada Carn</string>
+    <string name="description_medium_meat">Cada 2 dias menjas carn</string>
+    <string name="title_low_meat">Poca carn</string>
+    <string name="description_low_meat">Consum baix de carn, però \nnomes carns blanques</string>
+    <string name="title_piscivegetarian">Piscivegetarià</string>
+    <string name="description_piscivegetarian">Una racio de peix cada dos dias</string>
+    <string name="title_vegetarian">Vegetarià</string>
+    <string name="description_vegetarian">No consumeixes carn, però ous i lactis si</string>
+    <string name="title_vegan">Vegà</string>
+    <string name="description_vegan">Cap consum d\'aliments d\'origen animal</string>
+
+    <!--   Home Consum fragment   -->
+    <string name="title_home_consum">Persones per habitatge</string>
+    <string name="description_home_consum">Selecciona quantes persones viuen al habitatge</string>
+    <string name="one_person">1 Persona</string>
+    <string name="two_persons">2 Persones</string>
+    <string name="three_persons">3+ Persones</string>
+
+    <!--   Home fragment   -->
+    <string name="appbar_home_fragment">HOME</string>
+
+    <!--   Map fragment   -->
+    <string name="appbar_map_fragment">MAP</string>
+
+    <!--    Scanner Fragment   -->
+    <string name="appbar_scanner_fragment">ESCANER</string>
+    <string name="text_points">Credits disponibles </string>
+    <string name="title_history">Historic</string>
+    <string name="button_scan">ESCANEJAR</string>
+    <string name="text_no_scanner_result">No tens productes escanejats en el sistema</string>
+
+    <!--    Scanner Fragment   -->
+    <string name="scan_product_no_exist">El codi escanejat no es un producte</string>
+    <string name="scan_canceled">Escaner cancelat</string>
+
+    <!--    Reward Fragment   -->
+    <string name="appbar_reward_fragment">ESCANER</string>
+
+    <!--    Carbon Footprint Fragment   -->
+    <string name="appbar_carbon_footprint_fragment">EMPRENTA DE CARBONI</string>
+    <string name="total_carbon_footprint">T/any</string>
+    <string name="transport_carbon_footprint">T EN TRANSPORTS</string>
+    <string name="flights_carbon_footprint">T EN VOLS</string>
+    <string name="alimentation_carbon_footprint">T EN ALIMENTACIÓ</string>
+    <string name="home_consum_carbon_footprint">T EN LA LLAR</string>
+    <string name="button_recalculate_carbon_footprint">RECALCULAR</string>
+
+    <!--    User Profile    -->
+    <string name="email_username_check_isempty">Els valors nom y e-mail no poden estar buits.</string>
+    <string name="sex">Gènere</string>
+    <string name="photo_canceled">Foto cancelada</string>
+    <string name="access_denied_camera">Has denegat el permis tros d\'asa</string>
+    <string name="appbar_user_profile_fragment">PERFIL DE L\'USUARI</string>
+    <string name="name">Nom</string>
+    <string name="surname">Cognoms</string>
+    <string name="birthday">Aniversari</string>
+    <string name="phone_number">Móvil</string>
+    <string name="edit_content">Editar contingut</string>
+    <string name="user_profile_image">Imatge del perfil d\'usuari</string>
+    <string name="edit_profile_changes">Editar</string>
+    <string name="phone_number_validation">El número ha de començar per 6 o 7 i contenir un total de 9 números.</string>
+    <string name="select_birthday">Selecciona el teu aniversari</string>
+    <string name="photo_not_possible">La foto no se ha podido realizar</string>
+
+    <!--    Map Fragment    -->
+    <string name="easterEgg">¿Que sortirà? Encara l\'hi queda per obrir-se</string>
+    <string name="deixalleria">Deixalleria Can Casanoves Horari:10:00–13:00, 15:00–19:00</string>
+    <string name="camioTarda">Cada dia de 19 a 23 h</string>
+    <string name="camioMati">Cada dia de 8 a 13 h</string>
+
+    <!--    RecycleView Arboles    -->
+    <string name="creditsRecycleView">Credits</string>
+    <string name="tituloRecycleView">Arbol</string>
+    <string name="numeroCreditosRecycleView">0</string>
+    <string name="nombreBotonRecycleView">PLANTAR</string>
+    <string name="tituloPremisRecycleView">Premis</string>
+    <string name="creditsDisponiblesRecycleView">Credits disponibles</string>
+
+    <!--    RecycleView Arboles    -->
+    <string name="dobleClickToExit">Clica enrrera un altre cop per sortir de la aplicacio</string>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recolifter</string>
+    <!-- Top Menu -->
+    <string name="top_menu_carbonFootPrint">Huella de carbono</string>
+    <string name="top_menu_userProfile">Perfil de usuario</string>
+    <string name="top_menu_signOut">Cerrar sesión</string>
+
+    <!--    Bottom Navigation   -->
+    <string name="bottom_nav_home">Inicio</string>
+    <string name="bottom_nav_map">Mapa</string>
+    <string name="bottom_nav_scanner">Escáner</string>
+    <string name="bottom_nav_rewards">Premios</string>
+
+    <!-- Activity PreLogin -->
+    <string name="button_register">REGISTRO</string>
+    <string name="text_account">¿Ya tienes una cuenta?</string>
+    <string name="text_login">Iniciar sesión</string>
+
+    <!-- Activity Login -->
+    <string name="invalid_credentials">Credenciales incorrectas</string>
+    <string name="authentication_succeed">Autenticación correcta</string>
+    <string name="authentication_failed">Autenticación fallida</string>
+    <string name="title_login">Iniciar sesión</string>
+    <string name="edit_text_email">Correo</string>
+    <string name="edit_text_password">Contraseña</string>
+    <string name="text_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="text_recover_password">Recupérala</string>
+    <string name="text_not_account">¿No tienes cuenta?</string>
+    <string name="text_register">Regístrate</string>
+    <string name="button_login">INICIAR SESIÓN</string>
+    <string name="button_login_google">Iniciar sesión con Google</string>
+
+    <!--    Register Activity    -->
+    <string name="register_failed">El registro en el sistema ha fallado, intenta más tarde</string>
+    <string name="minimum_password_length">Contraseña: Longitud mínima de 6 caracteres.</string>
+    <string name="conditions_check_box">Primero debes aceptar los términos y condiciones.</string>
+    <string name="register">Registro</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register_google">Registrarse con Google</string>
+    <string name="register_caps">REGISTRO</string>
+    <string name="already_account">¿Ya tienes una cuenta?</string>
+    <string name="terms_and_conditions">Acepto los términos y condiciones</string>
+
+    <!--    Buttom pantalla password recovery-->
+    <string name="invalid_email">La dirección no existe.</string>
+
+    <!--    Segunda Password Recovery -->
+    <string name="email_pasword_recovery">Email</string>
+    <string name="Introduir_mail">Introdúce tu correo electrónico, enviaremos un código para que puedas modificar tu contraseña</string>
+    <string name="Buttomenviar_precovery">ENVIAR</string>
+
+    <!--    Segunda pantalla Password Recovery Code -->
+    <string name="ButtomEnviar_precovery2">ENVIAR</string>
+    <string name="codi_enviat">Código enviado</string>
+    <string name="Code_CampoDeTexto">Código</string>
+    <string name="repeteix_contrasenya_Campodetexto">Repite contraseña</string>
+    <string name="nova_contrasenya_CampoDeTexto">Nueva Contraseña</string>
+
+    <!--    2 Home -->
+    <string name="name_home">Nombre</string>
+    <string name="surname_home">Apellidos</string>
+    <string name="five_home">5</string>
+    <string name="cantidadTCO2_home">T CO2</string>
+    <string name="titolBosc_home">El bosque sabe tu nombre</string>
+    <string name="descripcionbosque_home">Entra en la sección de premios y compra un árbol utilizando los créditos acumulados</string>
+    <string name="descripcionBosque2_home">Construye tu bosque reciclando</string>
+    <string name="botonBosque_home">VER TUS ÁRBOLES</string>
+    <string name="empremtaCarboni_home">Huella de Carbono</string>
+    <string name="descripcioEmprenta_home">Tu huella de carbono es de %1$s t/año</string>
+    <string name="BottomAmprenta_home">CALCULAR</string>
+
+    <!--   Questionnaire buttons   -->
+    <string name="button_skip">OMITIR</string>
+    <string name="button_next">Siguiente ▶</string>
+    <string name="button_back">◀ Atrás</string>
+
+    <!--   Questionnaire fragment   -->
+    <string name="title_questionnaire">COMIENZA A CALCULAR \n TU \n HUELLA DE CARBONO</string>
+
+    <!--   Transport Type fragment   -->
+    Copy code
+    <string name="title_transport_type">Tipo de transporte</string>
+    <string name="description_transport_type">Selecciona el tipo de transporte que utilizas con más frecuencia</string>
+    <string name="text_car">Coche</string>
+    <string name="text_motorbike">Moto</string>
+    <string name="text_bus">Autobús</string>
+    <string name="text_train">Tren</string>
+    <string name="text_bike">Bicicleta</string>
+    <string name="text_walk">Caminar</string>
+    <!--   Transport Time fragment   -->
+    Copy code
+    <string name="title_transport_time">Tiempo de transporte</string>
+    <string name="description_transport_time">Tiempo aproximado que dedicas a viajar al dia</string>
+    <!--   Transport Time fragment   -->
+    Copy code
+    <string name="title_flights">En tus vuelos</string>
+    <string name="description_flights">¿Cuántos vuelos tomas al año? Recuerda contabilizar los viajes de ida y vuelta</string>
+    <string name="title_short_fly">Corto</string>
+    <string name="description_short_fly">Máximo 3 horas de duración</string>
+    <string name="title_medium_fly">Medio</string>
+    <string name="description_medium_fly">3–6 horas de duración</string>
+    <string name="title_long_fly">Largo</string>
+    <string name="description_long_fly">6+ horas</string>
+
+    <!--   Alimentation fragment   -->
+    <string name="title_alimentation">Seguimiento alimentario</string>
+    <string name="description_alimentation">¿Cuál de los siguientes tipos describe mejor tu consumo alimentario?</string>
+    <string name="title_lot_meat">Mucha carne</string>
+    <string name="description_lot_meat">Más de 100g de carne al día</string>
+    <string name="title_medium_meat">Moderada Carne</string>
+    <string name="description_medium_meat">Cada 2 días comes carne</string>
+    <string name="title_low_meat">Poca carne</string>
+    <string name="description_low_meat">Bajo consumo de carne, pero \nsólo carnes blancas</string>
+    <string name="title_piscivegetarian">Piscivegetariano</string>
+    <string name="description_piscivegetarian">Una ración de pescado cada dos días</string>
+    <string name="title_vegetarian">Vegetariano</string>
+    <string name="description_vegetarian">No consumes carne, pero sí huevos y lácteos</string>
+    <string name="title_vegan">Vegano</string>
+    <string name="description_vegan">Ningún consumo de alimentos de origen animal</string>
+
+    <!--   Home Consum fragment   -->
+    <string name="title_home_consum">Personas por hogar</string>
+    <string name="description_home_consum">Selecciona cuántas personas viven en el hogar</string>
+    <string name="one_person">1 Persona</string>
+    <string name="two_persons">2 Personas</string>
+    <string name="three_persons">3+ Personas</string>
+
+    <!--   Home fragment   -->
+    <string name="appbar_home_fragment">INICIO</string>
+
+    <!--   Map fragment   -->
+    <string name="appbar_map_fragment">MAPA</string>
+
+    <!--    Scanner Fragment   -->
+    <string name="appbar_scanner_fragment">ESCANEO</string>
+    <string name="text_points">Créditos disponibles </string>
+    <string name="title_history">Histórico</string>
+    <string name="button_scan">ESCANEAR</string>
+    <string name="text_no_scanner_result">No tienes productos escaneados en el sistema</string>
+
+    <!--    Scanner Fragment   -->
+    <string name="scan_product_no_exist">El código escaneado no es un producto</string>
+    <string name="scan_canceled">Escaneo cancelado</string>
+    <!--    Reward Fragment   -->
+    Copy code
+    <string name="appbar_reward_fragment">ESCANEO</string>
+
+    <!--    Carbon Footprint Fragment   -->
+    <string name="appbar_carbon_footprint_fragment">HUELLA DE CARBONO</string>
+    <string name="total_carbon_footprint">T/año</string>
+    <string name="transport_carbon_footprint">T EN TRANSPORTES</string>
+    <string name="flights_carbon_footprint">T EN VUELOS</string>
+    <string name="alimentation_carbon_footprint">T EN ALIMENTACIÓN</string>
+    <string name="home_consum_carbon_footprint">T EN EL HOGAR</string>
+    <string name="button_recalculate_carbon_footprint">RECALCULAR</string>
+
+    <!--    User Profile    -->
+    <string name="email_username_check_isempty">Los campos nombre y e-mail no pueden estar vacíos.</string>
+    <string name="sex">Género</string>
+    <string name="appbar_user_profile_fragment">PERFIL DEL USUARIO</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="birthday">Fecha de nacimiento</string>
+    <string name="phone_number">Número de teléfono</string>
+    <string name="edit_content">editar contenido</string>
+    <string name="user_profile_image">imagen del perfil de usuario</string>
+    <string name="edit_profile_changes">Editar</string>
+    <string name="phone_number_validation">El número debe comenzar con 6 o 7 y contener un total de 9 números.</string>
+    <string name="select_birthday">Selecciona tu cumpleaños</string>
+    <string name="photo_not_possible">No se ha podido realizar la foto</string>
+
+    <!--    Map Fragment    -->
+    <string name="easterEgg">¿Qué saldrá? Aún le queda por abrirse</string>
+    <string name="deixalleria">Deixalleria Can Casanoves Horario:10:00–13:00, 15:00–19:00</string>
+    <string name="camioTarda">Cada día de 19 a 23 h</string>
+    <string name="camioMati">Cada día de 8 a 13 h</string>
+
+    <!--    RecycleView Arboles    -->
+    <string name="creditsRecycleView">Créditos</string>
+    <string name="tituloRecycleView">Árbol</string>
+    <string name="numeroCreditosRecycleView">0</string>
+    <string name="nombreBotonRecycleView">PLANTAR</string>
+    <string name="tituloPremisRecycleView">Premios</string>
+    <string name="creditsDisponiblesRecycleView">Créditos disponibles</string>
+    <string name="access_denied_camera">Permiso denegado</string>
+    <string name="photo_canceled">Foto cancelada</string>
+
+    <!--    RecycleView Arboles    -->
+    <string name="dobleClickToExit">Clica atras otra vez para salir de la aplicacion</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<!-- General: Margins/Paddings -->
+    <dimen name="ui_margin_micro">2dp</dimen>
+    <dimen name="ui_margin_xmicro">4dp</dimen>
+    <dimen name="ui_margin_xxmicro">5dp</dimen>
+    <dimen name="ui_margin_small">8dp</dimen>
+    <dimen name="ui_margin_xsmall">10dp</dimen>
+    <dimen name="ui_margin_xxsmall">12dp</dimen>
+    <dimen name="ui_margin_normal">15dp</dimen>
+    <dimen name="ui_margin_xnormal">16dp</dimen>
+    <dimen name="ui_margin_xxnormal">18dp</dimen>
+    <dimen name="ui_margin_xxxnormal">20dp</dimen>
+    <dimen name="ui_margin_xxxnormalx">22dp</dimen>
+    <dimen name="ui_margin_large">25dp</dimen>
+    <dimen name="ui_margin_xlarge">30dp</dimen>
+    <dimen name="ui_margin_xslarge">35dp</dimen>
+    <dimen name="ui_margin_xxlarge">40dp</dimen>
+    <dimen name="ui_margin_xxlargex">44dp</dimen>
+    <dimen name="ui_margin_xxxlarge">50dp</dimen>
+    <dimen name="ui_margin_xxxxlarge">60dp</dimen>
+    <dimen name="ui_margin_extrasslarge">70dp</dimen>
+    <dimen name="ui_margin_extrasslargex">75dp</dimen>
+    <dimen name="ui_margin_extraslarge">80dp</dimen>
+    <dimen name="ui_margin_extraxslarge">85dp</dimen>
+    <dimen name="ui_margin_extralarge">90dp</dimen>
+    <dimen name="ui_margin_extralargex">94dp</dimen>
+    <dimen name="ui_margin_extraxlarge">100dp</dimen>
+    <dimen name="ui_margin_extraxxlarge">120dp</dimen>
+    <dimen name="ui_margin_extraxxslarge">110dp</dimen>
+    <dimen name="ui_margin_extraxxxlarge">125dp</dimen>
+
+    <!-- General: Text size -->
+    <dimen name="text_size_small">5sp</dimen>
+    <dimen name="text_size_xsmall">8sp</dimen>
+    <dimen name="text_size_xxxsmall">10sp</dimen>
+    <dimen name="text_size_xxsmall">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_xnormal">15sp</dimen>
+    <dimen name="text_size_xxnormal">16sp</dimen>
+    <dimen name="text_size_xxxnormal">18sp</dimen>
+    <dimen name="text_size_slarge">20sp</dimen>
+    <dimen name="text_size_large">21sp</dimen>
+    <dimen name="text_size_xlarge">30sp</dimen>
+    <dimen name="text_size_xxlarge">40sp</dimen>
+</resources>

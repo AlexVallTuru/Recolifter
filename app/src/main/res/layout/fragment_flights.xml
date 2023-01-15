@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.questionnaire.FlightsFragment">
+
+    <LinearLayout
+        android:id="@+id/image_text_flights"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/im_flights"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:src="@drawable/im_fly" />
+        <!--    Title   -->
+        <TextView
+            android:id="@+id/title_flights"
+            style="@style/questionnaireTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/title_flights" />
+        <!--    Text    -->
+        <TextView
+            android:id="@+id/text_flights"
+            style="@style/questionnaireDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/description_flights" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rectangle_questionnaire_grey"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/button_flights"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_text_flights">
+
+        <TableRow
+            style="@style/tableRowFlights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/imageNumberPickerFlights"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rectangle_turquoise"
+                android:src="@drawable/im_short_fly" />
+
+            <LinearLayout
+                style="@style/verticalLayoutTextFlights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_short_fly" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_short_fly"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/short_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tableRowFlights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/imageNumberPickerFlights"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rectangle_mustard"
+                android:src="@drawable/im_medium_fly" />
+
+            <LinearLayout
+                style="@style/verticalLayoutTextFlights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_medium_fly" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_medium_fly"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/medium_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tableRowFlights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/imageNumberPickerFlights"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/rectangle_garnet"
+                android:src="@drawable/im_long_fly" />
+
+            <LinearLayout
+                style="@style/verticalLayoutTextFlights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_long_fly" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_long_fly"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/long_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!--    Buttons Layout  -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_flights"
+        style="@style/marginBottomConstrainQuestionnaire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bt_back_flights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_back"
+            app:layout_constraintEnd_toStartOf="@+id/bt_next_flights"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_next_flights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bt_back_flights"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

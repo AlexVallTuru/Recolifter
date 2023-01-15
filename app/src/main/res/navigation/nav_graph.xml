@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_home"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="cat.copernic.pdiaza.recolifter.ui.flux.home.HomeFragment"
+        android:label="@string/appbar_home_fragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="cat.copernic.pdiaza.recolifter.ui.flux.map.MapFragment"
+        android:label="@string/appbar_map_fragment"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_scanner"
+        android:name="cat.copernic.pdiaza.recolifter.ui.flux.scanner.view.ScannerFragment"
+        android:label="@string/appbar_scanner_fragment"
+        tools:layout="@layout/fragment_scanner" />
+    <fragment
+        android:id="@+id/navigation_reward"
+        android:name="cat.copernic.pdiaza.recolifter.ui.flux.RewardsFragment"
+        android:label="@string/appbar_reward_fragment"
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/navigation_carbon_footprint"
+        android:name="cat.copernic.pdiaza.recolifter.ui.flux.CarbonFootprintFragment"
+        android:label="@string/appbar_carbon_footprint_fragment"
+        tools:layout="@layout/fragment_carbon_footprint" >
+        <action
+            android:id="@+id/action_navigation_carbon_footprint_to_questionnaireFragment"
+            app:destination="@id/questionnaireFragment" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_user_profile"
+        android:name="cat.copernic.pdiaza.recolifter.ui.flux.UserProfileFragment"
+        android:label="@string/appbar_user_profile_fragment"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/alimentationFragment"
+        android:name="cat.copernic.pdiaza.recolifter.ui.questionnaire.AlimentationFragment"
+        android:label="AlimentationFragment" >
+        <action
+            android:id="@+id/action_alimentationFragment_to_flightsFragment"
+            app:destination="@id/flightsFragment" />
+        <action
+            android:id="@+id/action_alimentationFragment_to_homeConsumFragment"
+            app:destination="@id/homeConsumFragment" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/flightsFragment"
+        android:name="cat.copernic.pdiaza.recolifter.ui.questionnaire.FlightsFragment"
+        android:label="FlightsFragment" >
+        <action
+            android:id="@+id/action_flightsFragment_to_transportTimePickerFragment"
+            app:destination="@id/transportTimePickerFragment" />
+        <action
+            android:id="@+id/action_flightsFragment_to_alimentationFragment"
+            app:destination="@id/alimentationFragment" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeConsumFragment"
+        android:name="cat.copernic.pdiaza.recolifter.ui.questionnaire.HomeConsumFragment"
+        android:label="HomeConsumFragment" >
+        <action
+            android:id="@+id/action_homeConsumFragment_to_alimentationFragment"
+            app:destination="@id/alimentationFragment" />
+        <action
+            android:id="@+id/action_homeConsumFragment_to_navigation_carbon_footprint"
+            app:destination="@id/navigation_carbon_footprint"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionnaireFragment"
+        android:name="cat.copernic.pdiaza.recolifter.ui.questionnaire.QuestionnaireFragment"
+        android:label="QuestionnaireFragment" >
+        <action
+            android:id="@+id/action_questionnaireFragment_to_transportTypeFragment"
+            app:destination="@id/transportTypeFragment" />
+        <action
+            android:id="@+id/action_questionnaireFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/transportTimePickerFragment"
+        android:name="cat.copernic.pdiaza.recolifter.ui.questionnaire.TransportTimePickerFragment"
+        android:label="TransportTimePickerFragment" >
+        <action
+            android:id="@+id/action_transportTimePickerFragment_to_transportTypeFragment"
+            app:destination="@id/transportTypeFragment" />
+        <action
+            android:id="@+id/action_transportTimePickerFragment_to_flightsFragment"
+            app:destination="@id/flightsFragment" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/transportTypeFragment"
+        android:name="cat.copernic.pdiaza.recolifter.ui.questionnaire.TransportTypeFragment"
+        android:label="TransportTypeFragment" >
+        <action
+            android:id="@+id/action_transportTypeFragment_to_transportTimePickerFragment"
+            app:destination="@id/transportTimePickerFragment" />
+        <action
+            android:id="@+id/action_transportTypeFragment_to_questionnaireFragment"
+            app:destination="@id/questionnaireFragment" />
+        <argument
+            android:name="transport_type"
+            app:argType="integer[]" />
+        <argument
+            android:name="transport_time"
+            app:argType="integer[]" />
+        <argument
+            android:name="flights"
+            app:argType="integer[]" />
+        <argument
+            android:name="alimentation"
+            app:argType="integer" />
+        <argument
+            android:name="home_consum"
+            app:argType="integer" />
+    </fragment>
+
+    <!--    global action questionnaire  -->
+    <action android:id="@+id/action_global_questionnaireFragment"
+        app:destination="@id/questionnaireFragment" />
+
+    <!--    global action carbon footprinter  -->
+    <action android:id="@+id/action_global_navigation_carbon_footprint"
+        app:destination="@id/navigation_carbon_footprint"/>
+
+    <!--    global action user profile  -->
+    <action android:id="@+id/action_global_navigation_user_profile"
+        app:destination="@id/navigation_user_profile"/>
+
+    <!--    global action home  -->
+    <action android:id="@+id/action_global_navigation_home"
+        app:destination="@id/navigation_home"/>
+
+    <!--    global action rewards  -->
+    <action android:id="@+id/action_global_navigation_rewards"
+        app:destination="@id/navigation_reward"/>
+</navigation>

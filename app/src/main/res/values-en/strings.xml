@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recolifter</string>
+
+    <!-- Top Menu -->
+    <string name="top_menu_carbonFootPrint">Carbon foot print</string>
+    <string name="top_menu_userProfile">User profile</string>
+    <string name="top_menu_signOut">Logout</string>
+
+    <!--    Bottom Navigation   -->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_map">Map</string>
+    <string name="bottom_nav_scanner">Scanner</string>
+    <string name="bottom_nav_rewards">Rewards</string>
+
+    <!-- Activity PreLogin -->
+    <string name="button_register">REGISTER</string>
+    <string name="text_account">Already have an account?</string>
+    <string name="text_login">Log in</string>
+
+    <!-- Activity Login -->
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="authentication_succeed">Authentication succeed</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="title_login">Log in</string>
+    <string name="edit_text_email">E-mail</string>
+    <string name="edit_text_password">Password</string>
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_recover_password">Recover it</string>
+    <string name="text_not_account">Don\'t have an account?</string>
+    <string name="text_register">Sign Up</string>
+    <string name="button_login">LOG IN</string>
+    <string name="button_login_google">Log in with Google</string>
+
+    <!--    Register Activity    -->
+    <string name="register_failed">Register failed, try it later</string>
+    <string name="minimum_password_length">Password: Minimum length required 6 characters.</string>
+    <string name="conditions_check_box">You must accept Terms and conditions first.</string>
+    <string name="register">Register</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="register_google">Register with Google</string>
+    <string name="register_caps">REGISTER</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="terms_and_conditions">Accept terms and conditions</string>
+
+    <!--    Buttom pantalla password recovery-->
+    <string name="invalid_email">E-mail not found</string>
+
+    <!--    Segunda Password Recovery -->
+    <string name="email_pasword_recovery">E-mail</string>
+    <string name="Introduir_mail">We will send you a code to modify your password</string>
+    <string name="Buttomenviar_precovery">SEND</string>
+
+    <!--    Segunda pantalla Password Recovery Code -->
+    <string name="ButtomEnviar_precovery2">SEND</string>
+    <string name="codi_enviat">Code sent</string>
+    <string name="Code_CampoDeTexto">Code</string>
+    <string name="repeteix_contrasenya_Campodetexto">Repeat your password</string>
+    <string name="nova_contrasenya_CampoDeTexto">New password</string>
+
+    <!--    2 Home -->
+    <string name="name_home">Name</string>
+    <string name="surname_home">Surname</string>
+    <string name="five_home">5</string>
+    <string name="cantidadTCO2_home">T CO2</string>
+    <string name="titolBosc_home">The forest knows your name</string>
+    <string name="descripcionbosque_home">Enter the rewards page so you can buy trees using your credits</string>
+    <string name="descripcionBosque2_home">Build your forest via recycling</string>
+    <string name="botonBosque_home">VIEW YOUR TREES</string>
+    <string name="empremtaCarboni_home">Carbon foot print</string>
+    <string name="descripcioEmprenta_home">Your carbon foot print is %1$s T/year</string>
+    <string name="BottomAmprenta_home">CALCULATE</string>
+
+    <!--   Questionnaire buttons   -->
+    <string name="button_skip">SKIP</string>
+    <string name="button_next">Next ▶</string>
+    <string name="button_back">◀ Back</string>
+
+    <!--   Questionnaire fragment   -->
+    <string name="title_questionnaire">START CALCULATING \n YOUR \n CARBON FOOT PRINT</string>
+
+    <!--   Transport Type fragment   -->
+    <string name="title_transport_type">Tansport type</string>
+    <string name="description_transport_type">Select the transport type that you use frequently</string>
+    <string name="text_car">Car</string>
+    <string name="text_motorbike">Moto</string>
+    <string name="text_bus">Bus</string>
+    <string name="text_train">Train</string>
+    <string name="text_bike">Bycicle</string>
+    <string name="text_walk">Walk</string>
+
+    <!--   Transport Time fragment   -->
+    <string name="title_transport_time">Transport time</string>
+    <string name="description_transport_time">Approximate time you spend traveling in a day</string>
+
+    <!--   Transport Time fragment   -->
+    <string name="title_flights">To your trips</string>
+    <string name="description_flights">How many flights you take per year? Remember to account for round trips</string>
+    <string name="title_short_fly">Short</string>
+    <string name="description_short_fly">3 hours duration max</string>
+    <string name="title_medium_fly">Medium</string>
+    <string name="description_medium_fly">3-6 hours duration</string>
+    <string name="title_long_fly">Long</string>
+    <string name="description_long_fly">6+ hours</string>
+
+    <!--   Alimentation fragment   -->
+    <string name="title_alimentation">Food monitoring</string>
+    <string name="description_alimentation">Which of the following types describes your food consumption?</string>
+    <string name="title_lot_meat">A lot of meat</string>
+    <string name="description_lot_meat">More than 100gr of meat per day</string>
+    <string name="title_medium_meat">Moderate meat</string>
+    <string name="description_medium_meat">Every  2 days you eat meat</string>
+    <string name="title_low_meat">Little meat</string>
+    <string name="description_low_meat">Low meat consumption, but [...]</string>
+    <string name="title_piscivegetarian">Piscivegetarian</string>
+    <string name="description_piscivegetarian">A serving of fish every two days</string>
+    <string name="title_vegetarian">Vegetarian</string>
+    <string name="description_vegetarian">You don\'t eat meat, but you do eat eggs and dairy</string>
+    <string name="title_vegan">Vegan</string>
+    <string name="description_vegan">"You do not eat food of animal origin "</string>
+
+    <!--   Home Consum fragment   -->
+    <string name="title_home_consum">People per household</string>
+    <string name="description_home_consum">Select how many people live at your household</string>
+    <string name="one_person">1 Person</string>
+    <string name="two_persons">2 People</string>
+    <string name="three_persons">3+ People</string>
+
+    <!--   Home fragment   -->
+    <string name="appbar_home_fragment">HOME</string>
+
+    <!--    Scanner Fragment   -->
+    <string name="appbar_map_fragment">MAP</string>
+    <string name="appbar_scanner_fragment">SCANNER</string>
+    <string name="text_points">Credits available</string>
+    <string name="title_history">History</string>
+    <string name="button_scan">SCAN</string>
+    <string name="text_no_scanner_result">You have no scanned products</string>
+
+    <!--    Scanner Fragment   -->
+    <string name="scan_product_no_exist">The scanned code is not from a product</string>
+    <string name="scan_canceled">Scanner canceled</string>
+
+    <!--    Reward Fragment   -->
+    <string name="appbar_reward_fragment">SCANNER</string>
+
+    <!--    Carbon Footprint Fragment   -->
+    <string name="appbar_carbon_footprint_fragment">CARBON FOOR PRINT</string>
+    <string name="total_carbon_footprint">T/year</string>
+    <string name="transport_carbon_footprint">T IN TRIPS</string>
+    <string name="flights_carbon_footprint">T IN FLIGHTS</string>
+    <string name="alimentation_carbon_footprint">T IN ALIMENTATION</string>
+    <string name="home_consum_carbon_footprint">T IN HOUSEHOLD</string>
+    <string name="button_recalculate_carbon_footprint">RECALCULATE</string>
+
+    <!--    User Profile    -->
+    <string name="email_username_check_isempty">Name and e-mail fields can\'t be blank.</string>
+    <string name="sex">Genre</string>
+    <string name="appbar_user_profile_fragment">USER PROFILE</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="birthday">Surname</string>
+    <string name="phone_number">Phone number</string>
+    <string name="edit_content">Edit content</string>
+    <string name="user_profile_image">User profile image</string>
+    <string name="edit_profile_changes">Edit</string>
+    <string name="phone_number_validation">The number has to start from 6 or 7, and should have a length of 9 numbers.</string>
+    <string name="select_birthday">Select your birthday</string>
+    <string name="photo_not_possible">The photo could not be taken</string>
+
+    <!--    Map Fragment    -->
+    <string name="easterEgg">What will it be? It still has to open</string>
+    <string name="deixalleria">Garbage Plant Can Casanoves, Schedule: 10:00-13:00, 15:00-19:00</string>
+    <string name="camioTarda">Everyday from 19 to 23</string>
+    <string name="camioMati">Everyday from 8 to 13</string>
+
+    <!--    RecycleView Arboles    -->
+    <string name="creditsRecycleView">Credits</string>
+    <string name="tituloRecycleView">Tree</string>
+    <string name="numeroCreditosRecycleView">0</string>
+    <string name="nombreBotonRecycleView">PLANT</string>
+    <string name="tituloPremisRecycleView">Rewards</string>
+    <string name="creditsDisponiblesRecycleView">Available credits</string>
+    <string name="access_denied_camera">Permission denied</string>
+    <string name="photo_canceled">Photo canceled</string>
+
+    <!--    RecycleView Arboles    -->
+    <string name="dobleClickToExit">Please click BACK again to exit</string>
+
+</resources>
