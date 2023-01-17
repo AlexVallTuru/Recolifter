@@ -18,9 +18,9 @@ import cat.copernic.pdiaza.recolifter.databaseManager.FirebaseReadWrite
 
 class CostumerAdapter : RecyclerView.Adapter<CostumerAdapter.ViewHolder>() {
 
-    var rewards: MutableList<DataReward> = ArrayList()
-    var context: Context? = null
-    var parentFragment: RewardsFragment? = null
+    private var rewards: MutableList<DataReward> = ArrayList()
+    private var context: Context? = null
+    private var parentFragment: RewardsFragment? = null
 
     private lateinit var firebaseCompadre: FirebaseReadWrite
 
