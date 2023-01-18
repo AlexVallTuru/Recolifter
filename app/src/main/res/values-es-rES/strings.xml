@@ -63,7 +63,7 @@
     <string name="name_home">Nombre</string>
     <string name="surname_home">Apellidos</string>
     <string name="five_home">5</string>
-    <string name="cantidadTCO2_home">T CO2</string>
+    <string name="cantidadTCO2_home">%1$s T CO2</string>
     <string name="titolBosc_home">El bosque sabe tu nombre</string>
     <string name="descripcionbosque_home">Entra en la sección de premios y compra un árbol utilizando los créditos acumulados</string>
     <string name="descripcionBosque2_home">Construye tu bosque reciclando</string>

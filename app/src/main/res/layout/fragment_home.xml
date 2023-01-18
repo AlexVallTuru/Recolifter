@@ -29,9 +29,9 @@
                 android:id="@+id/first_linear_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/ui_margin_xnormal"
+                android:layout_marginTop="@dimen/ui_margin_xnormal"
+                android:layout_marginEnd="@dimen/ui_margin_xnormal"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_user_portrait_black_24dp"
                     app:civ_border_color="@color/transparent"
-                    app:civ_border_width="2dp" />
+                    app:civ_border_width="@dimen/ui_margin_micro" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -55,20 +55,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:paddingHorizontal="16dp"
-                        android:paddingVertical="12dp"
+                        android:paddingHorizontal="@dimen/ui_margin_xnormal"
+                        android:paddingVertical="@dimen/ui_margin_xxsmall"
                         android:text="@string/name_home"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/text_size_xxxnormal" />
 
                     <TextView
                         android:id="@+id/tv_surname_home"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:paddingHorizontal="16dp"
-                        android:paddingVertical="12dp"
+                        android:paddingHorizontal="@dimen/ui_margin_xnormal"
+                        android:paddingVertical="@dimen/ui_margin_xxsmall"
                         android:text="@string/surname_home"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/text_size_xxxnormal" />
 
                 </LinearLayout>
 
@@ -78,9 +78,9 @@
                 android:id="@+id/icon_info_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/ui_margin_xnormal"
+                android:layout_marginTop="@dimen/ui_margin_xxxnormal"
+                android:layout_marginEnd="@dimen/ui_margin_xnormal"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -93,14 +93,14 @@
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:src="@drawable/ic_arbol"
-                    tools:layout_marginLeft="75dp" />
+                    tools:layout_marginLeft="@dimen/ui_margin_extrasslargex" />
 
                 <TextView
                     android:id="@+id/tree_counter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:textSize="4mm" />
+                    android:textSize="@dimen/text_size_xlarge" />
 
                 <ImageView
                     android:layout_width="29dp"
@@ -112,10 +112,10 @@
                     android:id="@+id/total_co2"
                     android:layout_width="95dp"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="70dp"
+                    android:layout_marginEnd="@dimen/ui_margin_extrasslarge"
                     android:layout_weight="1"
                     android:text="@string/cantidadTCO2_home"
-                    android:textSize="4mm" />
+                    android:textSize="@dimen/text_size_xlarge" />
 
             </LinearLayout>
 
@@ -123,9 +123,9 @@
                 android:id="@+id/slide_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/ui_margin_xnormal"
+                android:layout_marginTop="@dimen/ui_margin_xxxnormal"
+                android:layout_marginEnd="@dimen/ui_margin_xnormal"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -135,7 +135,7 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
+                    android:layout_margin="@dimen/ui_margin_small">
 
 
                     <LinearLayout
@@ -157,7 +157,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="16dp">
+                            android:padding="@dimen/ui_margin_xnormal">
 
                             <!-- Title, secondary and supporting text -->
                             <TextView
@@ -169,7 +169,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="@dimen/ui_margin_small"
                                 android:text="@string/descripcionbosque_home"
                                 android:textAppearance="?attr/textAppearanceBody2"
                                 android:textColor="?android:attr/textColorSecondary" />
@@ -177,7 +177,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
+                                android:layout_marginTop="@dimen/ui_margin_xnormal"
                                 android:text="@string/descripcionBosque2_home"
                                 android:textAppearance="?attr/textAppearanceBody2"
                                 android:textColor="?android:attr/textColorSecondary" />
@@ -193,8 +193,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/ui_margin_xnormal"
+                android:layout_marginEnd="@dimen/ui_margin_xnormal"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -204,7 +204,7 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
+                    android:layout_margin="@dimen/ui_margin_small">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="16dp">
+                            android:padding="@dimen/ui_margin_xnormal">
 
                             <!-- Title, secondary and supporting text -->
                             <TextView
@@ -230,7 +230,7 @@
                                 android:id="@+id/tvCarbonDescription"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="@dimen/ui_margin_small"
                                 android:textAppearance="?attr/textAppearanceBody2"
                                 android:textColor="?android:attr/textColorSecondary" />
 

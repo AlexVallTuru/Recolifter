@@ -76,7 +76,8 @@ class HomeFragment : Fragment() {
             } else {
                 firebaseCompadre.setUserCo2Printer(DataCarbonFootPrinter())
             }
-            binding.totalCo2.text = totalCo2.toString()
+
+            binding.totalCo2.text = getString(R.string.cantidadTCO2_home, totalCo2.toString())
             binding.tvCarbonDescription.text =
                 getString(R.string.descripcioEmprenta_home, totalCo2.toString())
 

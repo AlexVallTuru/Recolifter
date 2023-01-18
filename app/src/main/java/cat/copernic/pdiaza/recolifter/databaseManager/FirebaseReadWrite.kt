@@ -86,13 +86,9 @@ class FirebaseReadWrite {
     }
 
     fun setUserPoints(userRewards: DataUserRewards) {
-        val userPoints = hashMapOf(
-            "UserPoints" to userRewards.userPoints,
-            "CantidadDeArboles" to userRewards.cantidadDeArboles
-        )
         db.collection("UserRewards").document(FirebaseAuth.getInstance().currentUser!!.uid)
-            .set(userPoints)
-            .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
+            .set(userRewards)
+            .addOnCompleteListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
             .addOnFailureListener { e -> Log.w(TAG, "Error writing document", e) }
     }
 

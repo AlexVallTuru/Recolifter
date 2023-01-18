@@ -26,10 +26,7 @@ class RewardsFragment : Fragment() {
 
     private lateinit var firebaseCompadre: FirebaseReadWrite
     private var db = FirebaseFirestore.getInstance()
-    private var userRewards: DataUserRewards? = null
-
-    var tcredits: Int = 0
-    var contador: Int = 0
+    var userRewards: DataUserRewards? = null
 
     override fun onCreateView(
         infalter: LayoutInflater, container:
@@ -79,16 +76,10 @@ class RewardsFragment : Fragment() {
             .addOnSuccessListener { documentSnapshot ->
                 userRewards = documentSnapshot.toObject<DataUserRewards>()
                 //var userRewards:String = documentSnapshot.data?.get("UserPoints").toString()
-                _binding.totalcredits.text = userRewards!!.userPoints.toString()
-                if (userRewards != null) {
-                    if (userRewards!!.userPoints != null) {
-                        this.tcredits = userRewards!!.userPoints!!
-                    }
-                    if (userRewards!!.cantidadDeArboles != null) {
-                        this.contador = userRewards!!.cantidadDeArboles!!
-                        Log.d("Contador", "Contador +$contador")
-                    }
+                if(userRewards ==null){
+                    userRewards = DataUserRewards()
                 }
+                binding.totalcredits.text = userRewards!!.userPoints.toString()
             }
 
 
@@ -98,9 +89,10 @@ class RewardsFragment : Fragment() {
 
     }
 
-    fun setTotalCredits(tcredits: Int, contador: Int) {
-        binding.totalcredits.text = tcredits.toString()
-        firebaseCompadre.setUserPoints(DataUserRewards(tcredits, contador))
+//    fun setTotalCredits(rewards:DataUserRewards) {
+    fun setTotalCredits() {
+        binding.totalcredits.text = userRewards!!.userPoints.toString()
+        firebaseCompadre.setUserPoints(userRewards!!)
     }
 }
 

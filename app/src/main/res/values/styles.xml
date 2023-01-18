@@ -74,7 +74,7 @@
     </style>
 
     <style name="titleHistory">
-        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/sfprodisplaybold</item>
     </style>

@@ -71,6 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
+                    android:contentDescription="@string/text_car"
                     android:src="@drawable/im_car"
                     android:visibility="visible" />
 
@@ -95,7 +96,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
-                    android:src="@drawable/im_motobike" />
+                    android:src="@drawable/im_motobike"
+                    android:contentDescription="@string/text_bike"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -118,7 +120,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
-                    android:src="@drawable/im_bus" />
+                    android:src="@drawable/im_bus"
+                    android:contentDescription="@string/text_bus"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -150,7 +153,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
-                    android:src="@drawable/im_train" />
+                    android:src="@drawable/im_train"
+                    android:contentDescription="@string/text_train"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -173,7 +177,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
-                    android:src="@drawable/im_bike" />
+                    android:src="@drawable/im_bike"
+                    android:contentDescription="@string/text_bike"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -196,7 +201,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/grey"
-                    android:src="@drawable/im_walk" />
+                    android:src="@drawable/im_walk"
+                    android:contentDescription="@string/text_walk"/>
 
                 <TextView
                     android:layout_width="wrap_content"

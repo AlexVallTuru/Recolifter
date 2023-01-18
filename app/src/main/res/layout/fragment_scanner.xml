@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_points"
-        android:textSize="8dp"
+        android:textSize="@dimen/text_size_xsmall"
         app:layout_constraintEnd_toEndOf="@id/reco_image"
         app:layout_constraintStart_toStartOf="@id/tv_points"
         app:layout_constraintTop_toBottomOf="@id/reco_image" />

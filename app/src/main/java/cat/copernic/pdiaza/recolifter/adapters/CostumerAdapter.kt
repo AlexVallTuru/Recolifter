@@ -49,10 +49,10 @@ class CostumerAdapter : RecyclerView.Adapter<CostumerAdapter.ViewHolder>() {
             with(rewards.get(position)) {
                 binding.btPlantar.setOnClickListener {
                     Log.d("CostumeraAdapter", "TotalCredit =$parentFragment.tcredits Credits=$credits")
-                    if (credits <= parentFragment!!.tcredits) {
-                        parentFragment!!.tcredits = parentFragment!!.tcredits - credits
-                        parentFragment!!.contador++
-                        parentFragment!!.setTotalCredits(parentFragment!!.tcredits,parentFragment!!.contador)
+                    if (credits <= parentFragment!!.userRewards!!.userPoints) {
+                        parentFragment!!.userRewards!!.userPoints -= credits
+                        parentFragment!!.userRewards!!.cantidadDeArboles++
+                        parentFragment!!.setTotalCredits()
 
                         firebaseCompadre.setObjectTrees(DataReward(this.title,this.description,this.credits,this.image))
 

@@ -31,6 +31,7 @@
     <dimen name="ui_margin_extraxxxlarge">125dp</dimen>
 
     <!-- General: Text size -->
+    <dimen name="text_size_xxmicro">4sp</dimen>
     <dimen name="text_size_small">5sp</dimen>
     <dimen name="text_size_xsmall">8sp</dimen>
     <dimen name="text_size_xxxsmall">10sp</dimen>
@@ -41,6 +42,7 @@
     <dimen name="text_size_xxxnormal">18sp</dimen>
     <dimen name="text_size_slarge">20sp</dimen>
     <dimen name="text_size_large">21sp</dimen>
-    <dimen name="text_size_xlarge">30sp</dimen>
-    <dimen name="text_size_xxlarge">40sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="text_size_xxlarge">30sp</dimen>
+    <dimen name="text_size_xxxlarge">40sp</dimen>
 </resources>
