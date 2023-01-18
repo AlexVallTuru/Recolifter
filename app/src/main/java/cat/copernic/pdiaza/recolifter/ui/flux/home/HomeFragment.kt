@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-
+        context?.let { Glide.get(it).clearMemory() }
         firebaseCompadre = FirebaseReadWrite.initialize()
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
@@ -108,6 +108,8 @@ class HomeFragment : Fragment() {
 
         //Cargamos los datos de firebase para poder adjuntarlos al carrousel
         firebaseCompadre.db.collection("TreeTypes").get().addOnSuccessListener { result ->
+            //Al realizar el clear no duplicamos el carrousel
+            rewards.clear()
             for (document in result) {
                 val credits = document.getLong("credits")
                 val descripcion = document.getString("description")
@@ -124,15 +126,18 @@ class HomeFragment : Fragment() {
                     )
                 }
             }
+
             val listCarouse = mutableListOf<CarouselItem>()
-            rewards.forEach { Reward ->
-                listCarouse.add(
-                    CarouselItem(
-                        Reward.image, Reward.title
+                rewards.forEach { Reward ->
+                    listCarouse.add(
+                        CarouselItem(
+                            Reward.image, Reward.title
+                        )
                     )
-                )
-            }
-            binding.carouselId.addData(listCarouse)
+                }
+                binding.carouselId.addData(listCarouse)
+
+
         }
     }
 
