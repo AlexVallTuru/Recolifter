@@ -66,7 +66,7 @@
     <string name="name_home">Name</string>
     <string name="surname_home">Surname</string>
     <string name="five_home">5</string>
-    <string name="cantidadTCO2_home">T CO2</string>
+    <string name="cantidadTCO2_home">%1$sT CO2</string>
     <string name="titolBosc_home">El bosc sap el teu nom</string>
     <string name="descripcionbosque_home">Entra al apartat de premis i compra un arbre utilizant el credits acumulats</string>
     <string name="descripcionBosque2_home">Construeix el teu bosc reciclant</string>
