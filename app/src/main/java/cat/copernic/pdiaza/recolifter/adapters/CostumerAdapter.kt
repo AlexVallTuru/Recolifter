@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import cat.copernic.pdiaza.recolifter.R
 import coil.api.load
 import cat.copernic.pdiaza.recolifter.databinding.CardLayoutBinding
 import cat.copernic.pdiaza.recolifter.models.DataReward
@@ -86,7 +87,7 @@ class CostumerAdapter : RecyclerView.Adapter<CostumerAdapter.ViewHolder>() {
                 .setTitle(rewards.get(position).title)
                 .setMessage("${rewards.get(position).item_detail}\n")
                 .setView(image)
-                .setPositiveButton("Tancar", null)
+                .setPositiveButton(R.string.clouse_dialog, null)
                 .show()
         }
     }
