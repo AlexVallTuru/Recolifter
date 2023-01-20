@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
-        android:text=""
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/reco_image"
         app:layout_constraintTop_toTopOf="@id/title_history" />

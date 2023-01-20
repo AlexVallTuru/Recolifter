@@ -147,25 +147,24 @@ class MainActivity : AppCompatActivity() {
         finish()
     }
 
+    /**
+     * Alerta para valor y hacer una reseña a la aplicacion en Google Play.
+     */
     private fun rateApp(){
         AppRate.with(this)
             .setInstallDays(0) // default 10, 0 means install day.
             .setLaunchTimes(3) // default 10
             .setRemindInterval(2) // default 1
-            .setOnClickButtonListener {
-                Toast.makeText(this,"Test",Toast.LENGTH_SHORT).show()
-            }
             .monitor()
 
         AppRate.showRateDialogIfMeetsConditions(this)
-        AppRate.with(this).showRateDialog(this)
     }
 
     /**
      * Escoje que metodo iniciara al abrir la aplicacion
      */
     private fun choseFirstFragment(navController: NavController, fragment: String) {
-        if (fragment.equals("Register")) {
+        if (fragment == AppConstants.REGISTER_KEY) {
             navController.navigate(R.id.action_global_questionnaireFragment)
         } else {
             navController.navigate(R.id.action_global_navigation_home)
