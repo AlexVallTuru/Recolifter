@@ -23,6 +23,7 @@ import cat.copernic.pdiaza.recolifter.ui.login.register.LoginActivity
 import cat.copernic.pdiaza.recolifter.utils.AppConstants
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import hotchemi.android.rate.AppRate
 
 /**
  * Clase encargada de manejar los fragments
@@ -62,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navView.setupWithNavController(navController)
+
+        rateApp()
 
     }
 
@@ -142,6 +145,20 @@ class MainActivity : AppCompatActivity() {
         val changeActivity = Intent(this, LoginActivity::class.java)
         startActivity(changeActivity)
         finish()
+    }
+
+    private fun rateApp(){
+        AppRate.with(this)
+            .setInstallDays(0) // default 10, 0 means install day.
+            .setLaunchTimes(3) // default 10
+            .setRemindInterval(2) // default 1
+            .setOnClickButtonListener {
+                Toast.makeText(this,"Test",Toast.LENGTH_SHORT).show()
+            }
+            .monitor()
+
+        AppRate.showRateDialogIfMeetsConditions(this)
+        AppRate.with(this).showRateDialog(this)
     }
 
     /**
