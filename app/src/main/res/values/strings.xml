@@ -196,7 +196,7 @@
 
     <!--    Rate app    -->
     <string name="rate_dialog_title">Valorar l\'aplicació</string>
-    <string name="rate_dialog_message">Si t\'ha agradat l\'aplicació, t\'importaria valorar l\'aplicació? No et portarà més d'un minut. Gràcies pel teu suport!</string>
+    <string name="rate_dialog_message">Si t\'ha agradat l\'aplicació, t\'importaria valorar l\'aplicació? No et portarà més d\'un minut. Gràcies pel teu suport!</string>
     <string name="rate_dialog_ok">VALORAR ARA</string>
     <string name="rate_dialog_cancel">RECORDA-M\'HO MÉS TARD</string>
     <string name="rate_dialog_no">NO, GRÀCIES!</string>
