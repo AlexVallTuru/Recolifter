@@ -145,6 +145,7 @@
 
     <!--    Reward Fragment   -->
     <string name="appbar_reward_fragment">SCANNER</string>
+    <string name="clouse_dialog">CLOSE</string>
 
     <!--    Carbon Footprint Fragment   -->
     <string name="appbar_carbon_footprint_fragment">CARBON FOOR PRINT</string>

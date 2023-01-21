@@ -125,4 +125,7 @@ dependencies {
     //Imagen redondeada
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    //Android Rate
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+
 }

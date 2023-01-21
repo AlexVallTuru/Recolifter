@@ -144,9 +144,10 @@
     <!--    Scanner Fragment   -->
     <string name="scan_product_no_exist">El código escaneado no es un producto</string>
     <string name="scan_canceled">Escaneo cancelado</string>
+
     <!--    Reward Fragment   -->
-    Copy code
     <string name="appbar_reward_fragment">ESCANEO</string>
+    <string name="clouse_dialog">CERRAR</string>
 
     <!--    Carbon Footprint Fragment   -->
     <string name="appbar_carbon_footprint_fragment">HUELLA DE CARBONO</string>

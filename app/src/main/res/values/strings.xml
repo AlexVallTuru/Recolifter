@@ -149,6 +149,7 @@
 
     <!--    Reward Fragment   -->
     <string name="appbar_reward_fragment">ESCANER</string>
+    <string name="clouse_dialog">TANCAR</string>
 
     <!--    Carbon Footprint Fragment   -->
     <string name="appbar_carbon_footprint_fragment">EMPRENTA DE CARBONI</string>

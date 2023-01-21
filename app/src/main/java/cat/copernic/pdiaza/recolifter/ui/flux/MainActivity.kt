@@ -23,6 +23,7 @@ import cat.copernic.pdiaza.recolifter.ui.login.register.LoginActivity
 import cat.copernic.pdiaza.recolifter.utils.AppConstants
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import hotchemi.android.rate.AppRate
 
 /**
  * Clase encargada de manejar los fragments
@@ -62,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navView.setupWithNavController(navController)
+
+        rateApp()
 
     }
 
@@ -145,10 +148,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
+     * Alerta para valor y hacer una reseña a la aplicacion en Google Play.
+     */
+    private fun rateApp(){
+        AppRate.with(this)
+            .setInstallDays(0) // default 10, 0 means install day.
+            .setLaunchTimes(3) // default 10
+            .setRemindInterval(2) // default 1
+            .monitor()
+
+        AppRate.showRateDialogIfMeetsConditions(this)
+    }
+
+    /**
      * Escoje que metodo iniciara al abrir la aplicacion
      */
     private fun choseFirstFragment(navController: NavController, fragment: String) {
-        if (fragment.equals("Register")) {
+        if (fragment == AppConstants.REGISTER_KEY) {
             navController.navigate(R.id.action_global_questionnaireFragment)
         } else {
             navController.navigate(R.id.action_global_navigation_home)

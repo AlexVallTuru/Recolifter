@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1002218918764-7o0e555r6ss2mld496ao2umrtms46v06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cat.copernic.pdiaza.recolifter",
+            "certificate_hash": "eccc3744cfa31a7e88ca355ca3e9412f0d4a4261"
+          }
+        },
+        {
           "client_id": "1002218918764-gmq8eqtbmbhvhd6fam7it6t4lea6660m.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
