@@ -15,6 +15,7 @@ import cat.copernic.pdiaza.recolifter.databinding.FragmentScannerBinding
 import cat.copernic.pdiaza.recolifter.models.DataRecycleProduct
 import cat.copernic.pdiaza.recolifter.models.DataUserRewards
 import cat.copernic.pdiaza.recolifter.ui.flux.scanner.provider.ScannerProvider
+import cat.copernic.pdiaza.recolifter.utils.AppConstants
 import com.google.firebase.firestore.ktx.toObject
 import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanIntentResult
@@ -32,7 +33,9 @@ class ScannerFragment : Fragment() {
     private lateinit var firebaseCompadre: FirebaseReadWrite
     private var userRewards: DataUserRewards? = null
     private lateinit var recyclerAdapter: ScannerAdapter
-    private var productsScan: MutableMap<String, DataRecycleProduct> = mutableMapOf()
+    private var productsScanEs: MutableMap<String, DataRecycleProduct> = mutableMapOf()
+    private var productsScanEn: MutableMap<String, DataRecycleProduct> = mutableMapOf()
+    private var productsScanCat: MutableMap<String, DataRecycleProduct> = mutableMapOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -80,8 +83,8 @@ class ScannerFragment : Fragment() {
 
     //Guarda el productScanner si existe en la lista de productos
     private fun scannerResultExist(scannerResult: String) {
-        if (productsScan.containsKey(scannerResult)) {
-            val productScanned = productsScan[scannerResult]
+        if (productsScanEs.containsKey(scannerResult)) {
+            val productScanned = productsScanEs[scannerResult]
             if (productScanned != null) {
                 //add to database the product scanned
                 addProductToUser(productScanned)
@@ -99,9 +102,29 @@ class ScannerFragment : Fragment() {
     }
 
     //Guarda el productScanned en base de datos
-    private fun addProductToUser(productScanned: DataRecycleProduct) {
-        productScanned.date = Calendar.getInstance().time
-        firebaseCompadre.setScannerProduct(productScanned, productScanned.scanCode)
+    private fun addProductToUser(productScannedEsIdiom: DataRecycleProduct) {
+        val date = Calendar.getInstance().time
+
+        //Set ES Firebase Product
+        productScannedEsIdiom.date = date
+        firebaseCompadre.setScannerProduct(productScannedEsIdiom,AppConstants.SPANISH_FIREBASE, productScannedEsIdiom.scanCode)
+
+        val productScannedEnIdiom = productsScanEn[productScannedEsIdiom.scanCode]
+        if (productScannedEnIdiom != null) {
+            productScannedEnIdiom.date = date
+            firebaseCompadre.setScannerProduct(productScannedEnIdiom, AppConstants.ENGLISH_FIREBASE, productScannedEnIdiom.scanCode)
+        }
+
+        val productScannedCatIdiom = productsScanCat[productScannedEsIdiom.scanCode]
+        if (productScannedCatIdiom != null) {
+            productScannedCatIdiom.date = date
+            firebaseCompadre.setScannerProduct(productScannedCatIdiom, AppConstants.CATALAN_FIREBASE ,productScannedCatIdiom.scanCode)
+        }
+
+
+
+
+        //Set CAT Firebase Product
     }
 
     //Actualiza los puntos del usuario
@@ -135,13 +158,33 @@ class ScannerFragment : Fragment() {
 
     //Carga el listado de productos
     private fun getDataProductScann() {
-        firebaseCompadre.getListProductsScan().addOnSuccessListener {
+        //ES firebase products
+        firebaseCompadre.getListProductsScan(AppConstants.SPANISH_FIREBASE).addOnSuccessListener {
             for (documentSnapshot in it) {
                 val item = documentSnapshot.toObject<DataRecycleProduct>()
-                productsScan.put(item.scanCode, item)
+                productsScanEs.put(item.scanCode, item)
                 Log.d("ScannerFragment", "item: ${item.toString()}")
             }
 
+        }
+
+        //CAT firebase products
+        firebaseCompadre.getListProductsScan(AppConstants.CATALAN_FIREBASE).addOnSuccessListener {
+            for (documentSnapshot in it) {
+                val item = documentSnapshot.toObject<DataRecycleProduct>()
+                productsScanCat.put(item.scanCode, item)
+                Log.d("ScannerFragment", "item: ${item.toString()}")
+            }
+
+        }
+
+        //EN firebase products
+        firebaseCompadre.getListProductsScan(AppConstants.ENGLISH_FIREBASE).addOnSuccessListener {
+            for (documentSnapshot in it) {
+                val item = documentSnapshot.toObject<DataRecycleProduct>()
+                productsScanEn.put(item.scanCode, item)
+                Log.d("ScannerFragment", "item: ${item.toString()}")
+            }
 
         }
     }

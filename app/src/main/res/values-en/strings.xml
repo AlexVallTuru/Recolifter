@@ -134,7 +134,7 @@
     <!--    Scanner Fragment   -->
     <string name="appbar_map_fragment">MAP</string>
     <string name="appbar_scanner_fragment">SCANNER</string>
-    <string name="text_points">Credits available</string>
+    <string name="text_points">Available credits</string>
     <string name="title_history">History</string>
     <string name="button_scan">SCAN</string>
     <string name="text_no_scanner_result">You have no scanned products</string>

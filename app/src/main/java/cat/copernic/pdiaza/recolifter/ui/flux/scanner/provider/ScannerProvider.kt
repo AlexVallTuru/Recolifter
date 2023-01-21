@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import cat.copernic.pdiaza.recolifter.adapters.ScannerAdapter
 import cat.copernic.pdiaza.recolifter.databaseManager.FirebaseReadWrite
 import cat.copernic.pdiaza.recolifter.models.DataRecycleProduct
+import cat.copernic.pdiaza.recolifter.models.Language
 import cat.copernic.pdiaza.recolifter.ui.flux.MainActivity
 import cat.copernic.pdiaza.recolifter.ui.flux.scanner.view.ScannerFragment
 import com.google.firebase.firestore.ktx.toObject
@@ -22,7 +23,7 @@ class ScannerProvider {
             fragment: ScannerFragment
         ) {
             historicProductsList.clear()
-            firebaseCompadre.getScannerProduct().addOnSuccessListener {
+            firebaseCompadre.getScannerProduct(Language.instance.deviceLanguage.name).addOnSuccessListener {
                 for (document in it) {
                     val item = document.toObject<DataRecycleProduct>()
                     historicProductsList.add(item)

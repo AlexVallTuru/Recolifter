@@ -21,5 +21,10 @@ object AppConstants {
     const val CATALAN_LANGUAGE = "ca"
     const val ENGLISH_LANGUAGE = "en"
 
+    //Firebase language
+    const val SPANISH_FIREBASE = "ES"
+    const val CATALAN_FIREBASE = "CAT"
+    const val ENGLISH_FIREBASE = "EN"
+
 
 }

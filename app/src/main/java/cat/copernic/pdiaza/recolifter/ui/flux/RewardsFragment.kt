@@ -11,10 +11,13 @@ import cat.copernic.pdiaza.recolifter.adapters.CostumerAdapter
 import cat.copernic.pdiaza.recolifter.databaseManager.FirebaseReadWrite
 import cat.copernic.pdiaza.recolifter.databinding.FragmentRewardsBinding
 import cat.copernic.pdiaza.recolifter.models.DataReward
+import cat.copernic.pdiaza.recolifter.models.DataTree
 import cat.copernic.pdiaza.recolifter.models.DataUserRewards
+import cat.copernic.pdiaza.recolifter.models.Language
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.toObject
+import com.google.firebase.firestore.ktx.toObjects
 
 /**
  * Clase encargada de vincular los datos de los premios con la parte visual
@@ -38,10 +41,11 @@ class RewardsFragment : Fragment() {
 
         //GET BDD
 
-        val treetypes = db.collection("TreeTypes")
-        treetypes.get()
-            .addOnSuccessListener { result ->
-                for (document in result) {
+        firebaseCompadre.db.collection("Language")
+            .document(Language.instance.deviceLanguage.name).collection("TreeTypes")
+            .get().addOnSuccessListener {
+
+                for (document in it) {
                     val credits = document.getLong("credits")
                     val descripcion = document.getString("description")
                     val image = document.getString("image")
@@ -60,6 +64,7 @@ class RewardsFragment : Fragment() {
                     //val reward = document.toObject(Reward::class.java)
                     //rewards.add(reward)
                 }
+
                 val adapter = CostumerAdapter()
                 adapter.CostumerAdapter(rewards, this, context)
                 binding.recyclerView.layoutManager = LinearLayoutManager(context)

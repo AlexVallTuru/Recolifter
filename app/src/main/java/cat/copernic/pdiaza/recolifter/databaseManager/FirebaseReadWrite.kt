@@ -157,8 +157,9 @@ class FirebaseReadWrite {
      * Devuelve un array de RecycleProduct del usuario registrado de la colleccion UserScanner
      * @return QuerySnapshot
      */
-    fun getScannerProduct(): Task<QuerySnapshot> {
+    fun getScannerProduct(languageType:String): Task<QuerySnapshot> {
         return db.collection("UserScanner").document(FirebaseAuth.getInstance().currentUser!!.uid)
+            .collection("Language").document(languageType)
             .collection("RecycleProduct").get()
     }
 
@@ -168,8 +169,9 @@ class FirebaseReadWrite {
      * @param recycleProduct objeto con la informacion del producto escaneado
      * @param documentNumber id del documento
      */
-    fun setScannerProduct(recycleProduct: DataRecycleProduct, documentNumber: String) {
+    fun setScannerProduct(recycleProduct: DataRecycleProduct,languageType: String, documentNumber: String ) {
         db.collection("UserScanner").document(FirebaseAuth.getInstance().currentUser!!.uid)
+            .collection("Language").document(languageType)
             .collection("RecycleProduct").document(documentNumber)
             .set(recycleProduct)
             .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
@@ -180,8 +182,8 @@ class FirebaseReadWrite {
      * Devuelve un array de documentos de la collecion ProductScanner
      * @return QuerySnapshot
      */
-    fun getListProductsScan(): Task<QuerySnapshot> {
-        return db.collection("ProductScanner").get()
+    fun getListProductsScan(language:String): Task<QuerySnapshot> {
+        return db.collection("Language").document(language).collection("ProductScanner").get()
     }
 
     /**
