@@ -188,9 +188,20 @@ class FirebaseReadWrite {
      * Guarda DataRecyclerProducts en firebase
      * @param scannProduct objeto con la informacion del producto
      */
-    fun setListProductsScan(scannProduct: DataRecycleProduct) {
-        db.collection("ProductScanner").document()
+    fun setProductsScanLanguage(scannProduct: DataRecycleProduct, language: String, documentNum:String) {
+        db.collection("Language").document(language).collection("ProductScanner").document(documentNum)
             .set(scannProduct)
+            .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
+            .addOnFailureListener { e -> Log.w(TAG, "Error writing document", e) }
+    }
+
+    /**
+     * Guarda DataTree en firebase
+     * @param scannProduct objeto con la informacion del arbol
+     */
+    fun setTreeLanguage(tree: DataTree, language: String, treeName:String) {
+        db.collection("Language").document(language).collection("TreeTypes").document(treeName)
+            .set(tree)
             .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
             .addOnFailureListener { e -> Log.w(TAG, "Error writing document", e) }
     }

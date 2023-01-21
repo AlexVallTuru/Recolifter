@@ -6,10 +6,11 @@ import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import cat.copernic.pdiaza.recolifter.ui.flux.MainActivity
 import cat.copernic.pdiaza.recolifter.ui.login.register.PreLoginActivity
-import cat.copernic.pdiaza.recolifter.R
+import cat.copernic.pdiaza.recolifter.models.Language
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import java.util.*
 
 /**
  * Clase encargada de mostrar el splashScreen
@@ -23,6 +24,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
         checkUserLogined()
+        Language.instance.checkDeviceLanguage(Locale.getDefault().language)
     }
 
     /**

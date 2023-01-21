@@ -16,5 +16,10 @@ object AppConstants {
     const val LOGIN_KEY = "login"
     const val FIRST_FRAGMENT = "first_fragment"
 
+    //Current language
+    const val SPANISH_LANGUAGE = "es"
+    const val CATALAN_LANGUAGE = "ca"
+    const val ENGLISH_LANGUAGE = "en"
+
 
 }
