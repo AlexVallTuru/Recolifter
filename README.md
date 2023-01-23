@@ -10,4 +10,4 @@ También con las recompensas canjeadas contribuimos a crear un planeta más verd
 
 ## Full-stack iOS & Android developer
 
-[![Recolifter_Video](https://github.com/paudiangui/recolifter/blob/master/readme_image/video_image.png)](https://youtu.be/qbKW1jCMwpM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qbKW1jCMwpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
