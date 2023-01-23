@@ -8,6 +8,5 @@ También con las recompensas canjeadas contribuimos a crear un planeta más verd
 
 [![Google Play](https://img.shields.io/badge/recolifter-128C7E?style=for-the-badge&logo=googleplay&logoColor=white&labelColor=101010)](https://play.google.com/store/apps/details?id=cat.copernic.pdiaza.recolifter&hl=es)
 
-## Full-stack iOS & Android developer
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qbKW1jCMwpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## Video Recolifter
+[![Recolifter_Video](https://github.com/paudiangui/recolifter/blob/master/readme_image/video_image.png)](https://youtu.be/qbKW1jCMwpM)
