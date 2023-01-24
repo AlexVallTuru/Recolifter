@@ -10,3 +10,7 @@ También con las recompensas canjeadas contribuimos a crear un planeta más verd
 
 ## Video Recolifter
 [![Recolifter_Video](https://github.com/paudiangui/recolifter/blob/master/readme_image/video_image.png)](https://youtu.be/qbKW1jCMwpM)
+
+## Memoria del proyecto
+[![Memoria](https://img.shields.io/badge/DOC-2496ED?style=for-the-badge&logo=microsoftword&logoColor=white&labelColor=101010)]
+(https://docs.google.com/document/d/1HAum9rjKm83FYbise-aKCCfiD_UFZQWfqE2LTYDiI0Q/edit?usp=sharing)
