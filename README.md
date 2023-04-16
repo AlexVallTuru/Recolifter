@@ -1,6 +1,6 @@
 # Recolifter
 
-![https://github.com/paudiangui](https://github.com/paudiangui/recolifter/blob/master/readme_image/recolifter.png)
+![https://github.com/AlexVallTureu](https://github.com/AlexVallTuru/blob/main/alex_recolifter.png)
 
 Recolifter es una aplicación para fomentar el reciclaje, y reducir la huella de carbono personal. 
 Mediante un sistema, puntos y recompensas ayudamos que el usuario, se le haga más liviano y recicle más eficientemente.
